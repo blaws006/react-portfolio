@@ -1,8 +1,12 @@
 const mongoose = require("mongoose");
 
-const Schema = mongoose.Schema;
+var Schema = mongoose.Schema;
 
-const PortfolioSchema = new Schema({
+var PortfolioSchema = new Schema({
+    _id: {
+        type: Schema.Types.ObjectId,
+        required: true
+    },
     title: {
         type: String
     },
@@ -15,8 +19,9 @@ const PortfolioSchema = new Schema({
     img: {
         type: String
     }
+
 });
 
-const Portfolio = mongoose.model("Portfolio", PortfolioSchema);
+var Portfolio = mongoose.model("Portfolio", PortfolioSchema);
 
 module.exports = Portfolio;

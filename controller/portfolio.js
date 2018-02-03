@@ -4,14 +4,12 @@ const db = require("../models");
 module.exports = {
     findAll: function (req, res) {
         db.Portfolio.find(req.query)
-        .sort({
-            date: -1
-        })
         .then(function (dbPortfolio) {
             res.json(dbPortfolio);
+            console.log(dbPortfolio);
         })
         .catch(function (err) {
             res.json(err);
-        });
+        })
     }
 }

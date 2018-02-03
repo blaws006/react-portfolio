@@ -32,10 +32,10 @@ const About = () => (
                 <a href="tel:7035983362">+1 703.598.3362</a> &nbsp; | &nbsp;
                 <a href="mailto:blaws006@gmail.com">blaws006@gmail.com</a> &nbsp; | &nbsp;
                 <a href="https://github.com/blaws006" target="_blank">
-                    <i class="fab fa-github-square fa-w-14 fa-3x"></i>
+                    <i className="fab fa-github-square fa-w-14 fa-3x"></i>
                 </a> &nbsp; |&nbsp;
                 <a href="https://www.linkedin.com/in/blawson1/" target="_blank">
-                    <i class="fab fa-linkedin fa-w-14 fa-3x"></i>
+                    <i className="fab fa-linkedin fa-w-14 fa-3x"></i>
                 </a>
             </Col>
         </Row>

@@ -8,7 +8,17 @@ var db = require("./models");
 
 var routes = require("./routes");
 
-// Serve up static assets (usually on heroku)
+//Creates local and deployed paths for the MongoDB database
+
+// Set up promises with mongoose
+mongoose.Promise = Promise;
+
+//Creates local and deployed paths for the MongoDB database
+mongoose.connect(MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/portfolioDb"
+);
+
+app.use(routes)
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
@@ -19,11 +29,8 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-//Creates local and deployed paths for the MongoDB database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/portfolioDb";
+//Have request go through routes files
 
-mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI);
 
 app.listen(PORT, function() {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
