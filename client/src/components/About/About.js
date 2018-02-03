@@ -4,7 +4,7 @@ import {Col, Row} from "react-materialize";
 
 const About = () => (
     <div className="container">
-        <Row className="aboutMe" id="about">
+        <Row className="aboutMe">
             <Col s={12} m={12} l={8}>
                 <h3>Summary</h3>
                 <p>Highly-motivated Certified Full Stack web developer and Email Marketing Specialist with a passion for problem-solving
