@@ -3,8 +3,8 @@ import { Parallax, Row, Col } from "react-materialize";
 
 const Skills = () => (
    
-    <div id="skills">
-        <Parallax imageSrc="https://image.ibb.co/ewWD8m/laptop_black.png" />
+    <div id="skills" className="parallaxImage">
+        <Parallax imageSrc="http://image.ibb.co/eVBuxn/laptop_code_v2.jpg" />
         <Row className="container">
             <Col className="skills" s={12}>
         <div>

@@ -17,10 +17,14 @@ body {
   text-align: center;
 }
 
+.parallaxImage {
+  background: linear-gradient(black, rgba(0, 0, 0, 0.1))
+}
+
 /*****************************
 SKILLS SECTION
 *****************************/
-.skillsContainer {
+#skills {
   height: 100%
 }
 
