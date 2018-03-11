@@ -35,7 +35,6 @@ const About = () => (
                     <i className="fab fa-github-square fa-w-14 fa-3x"></i>
                 </a> &nbsp; |&nbsp;
                 <a href="https://www.linkedin.com/in/blawson1/" target="_blank">
-                    <i className="fab fa-linkedin fa-w-14 fa-3x"></i>
                 </a>
             </Col>
         </Row>

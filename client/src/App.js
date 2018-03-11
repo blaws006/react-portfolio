@@ -7,6 +7,8 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import API from "./utils/API"
 import Footer from "./components/Footer"
+import TopButton from "./components/TopButton"
+
 
 class App extends Component {
 
@@ -35,9 +37,9 @@ class App extends Component {
       <div>
       <Nav></Nav>
       <Home></Home>
-        <Row id="about" className="row teal darken-1 aboutMeTitle">
+        <Row className="row teal darken-1 aboutMeTitle">
           <Col l={12} s={12} className="center-align">
-            <h2 className="center-align">About Me</h2>
+            <h2 id="about" className="center-align">About Me</h2>
           </Col>
         </Row>
         <About></About>
@@ -58,7 +60,9 @@ class App extends Component {
           </Col>
           ))}
         </Row>
-     
+        <Row>
+          <TopButton></TopButton>
+        </Row>
       <Row id="contact">
           <Footer></Footer>
       </Row>

@@ -4,6 +4,9 @@ body {
   font-family: sans-serif;
 }
 
+h1, h2 {
+  line-height: 1.2;
+}
 
 .profileName {
   width: 100%;
@@ -21,11 +24,13 @@ body {
   background: linear-gradient(black, rgba(0, 0, 0, 0.1))
 }
 
+
 /*****************************
 SKILLS SECTION
 *****************************/
 #skills {
-  height: 100%
+  height: 100%;
+  margin-top: 10px;
 }
 
 .skills {
@@ -121,4 +126,14 @@ ARROWS
 
 .linkedIn a {
   color: #ffffff
+}
+
+.nav-button {
+  position: fixed;
+  top: 600px;
+  right: 25px  
+}
+
+.nav-button p {
+  color: #000000;
 }

@@ -1,24 +1,16 @@
 $(document).ready(function () {
-    console.log("Connected")
     $('.parallax').parallax();
 
 
     var options = [{
         selector: '#staggered-test',
-        offset: 400,
+        offset: 300,
         callback: function (el) {
             Materialize.showStaggeredList($(el));
         }
     }];
 
     Materialize.scrollFire(options);
-
-    $(function () {
-        $('.carousel.carousel-slider').carousel({
-            fullWidth: true,
-            indicators: false,
-        });
-    });
 
 
     // Select all links with hashes
@@ -40,7 +32,7 @@ $(document).ready(function () {
                 if (target.length) {
                     // Only prevent default if animation is actually gonna happen
                     event.preventDefault();
-                    $('html, body').animate({
+                    $('body, html').animate({
                         scrollTop: target.offset().top
                     }, 1000, function () {
                         // Callback after animation

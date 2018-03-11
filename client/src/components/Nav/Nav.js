@@ -6,7 +6,7 @@ const Nav = () => (
     <header>
         <div>
         <div className="nav-wrapper">
-            <Navbar style={{ position: "fixed", zIndex: 999, top: 0 }} id="nav" className="teal darken-1" brand="Brandon Lawson" left>
+            <Navbar style={{ zIndex: 999, top: 0 }} id="nav" className="teal darken-1" brand="Brandon Lawson" left>
             <NavItem className="scroll" href="#home">Home</NavItem>
             <NavItem className="scroll"  href="#about">About</NavItem>
             <NavItem className="scroll"  href="#skills">Skills</NavItem>
