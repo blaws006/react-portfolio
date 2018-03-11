@@ -37,9 +37,9 @@ class App extends Component {
       <div>
       <Nav></Nav>
       <Home></Home>
-        <Row className="row teal darken-1 aboutMeTitle">
+        <Row id="about" className="row teal darken-1 aboutMeTitle">
           <Col l={12} s={12} className="center-align">
-            <h2 id="about" className="center-align">About Me</h2>
+            <h2 className="center-align">About Me</h2>
           </Col>
         </Row>
         <About></About>
