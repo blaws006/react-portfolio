@@ -8,7 +8,7 @@ const Home = () => (
             <h1 className="white-text text-center">Brandon Lawson</h1>
             <h3 className="white-text">Full Stack Developer</h3>
         </div>
-        <Parallax imageSrc="http://image.ibb.co/eVBuxn/laptop_code_v2.jpg" />
+        <Parallax imageSrc ="https://image.ibb.co/fGJf3z/abstract_ai_art_373543.jpg" />
     </div>
 )
 
